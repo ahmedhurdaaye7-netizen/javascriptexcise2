@@ -1,0 +1,53 @@
+bo<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ .container{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+ }
+  input[type ='color' ]{
+    width: 150px;
+    height: 100px;
+   
+ }
+ button{
+    background-color: red;
+    padding: 10px;
+ }
+
+  
+
+    </style>
+</head>
+<body>
+  <div class="container" >
+  <h2>interactive color picker</h2>
+  <label for="color">color:</label>
+   <input type="color" id="color">
+    </div>
+
+    <div class="container" id="colorHistory">
+        <h2>color history:</h2>
+         <ul id="list"></ul>
+          <button onclick="clearHistory()">clear history</button>
+       
+    </div>
+
+     
+     
+
+
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
